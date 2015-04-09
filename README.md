@@ -14,7 +14,7 @@ This example command associates an EIP with the current instance.
 docker run --rm \
   -e AWS_ACCESS_KEY_ID="my-access-key" \
   -e AWS_SECRET_ACCESS_KEY="my-secret-key" \
-  mikljohansson/awscli ec2 associate-address \
+  meltwater/awscli ec2 associate-address \
   --instance-id "`curl -sL http://169.254.169.254/2014-11-05/meta-data/instance-id`" \
   --allocation-id "eip-1234abcd"
 ```
